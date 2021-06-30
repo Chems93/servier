@@ -1,0 +1,3 @@
+[console_scripts]
+servier-predict = chems.main:wesh
+
