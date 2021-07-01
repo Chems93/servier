@@ -4,7 +4,6 @@ from feature_extractor import fingerprint_features, fingerprint_array
 from sklearn.model_selection import train_test_split
 from sklearn import svm
 import argparse
-import logging
 from sklearn.metrics import classification_report
 
 
@@ -37,12 +36,7 @@ def main():
     # Predict
     SVC_prediction = SVC_model.predict(X_test)
     # Evaluate the model
-    #print(classification_report(SVC_prediction, y_test))
-    # Predict P1 for any given smile
-    parser = argparse.ArgumentParser(description='Enter smile')
-    parser.add_argument('string', type=str, help='Enter word or words', nargs='*')
-    args = parser.parse_args()
-    print('P1 = ', SVC_model.predict(fingerprint_array(fingerprint_features(args.string[0])).reshape(1, -1))[0])
+    print(classification_report(SVC_prediction, y_test))
 
 
 if __name__ == "__main__":

@@ -4,7 +4,6 @@ from feature_extractor import fingerprint_features, fingerprint_array
 from sklearn.model_selection import train_test_split
 from sklearn import svm
 import argparse
-import os
 from sklearn.metrics import classification_report
 
 

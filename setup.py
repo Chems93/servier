@@ -13,6 +13,7 @@ setup(
     entry_points={
         'console_scripts': [
             'servier-predict = main.main:main',
+            'servier-evaluate = main.evaluate:main',
         ],
     },
 )
