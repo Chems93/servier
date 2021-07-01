@@ -42,7 +42,7 @@ Model performance was evaluated using accuracy, specificity and sensitivity.
 Assuming that the business don't want to launch extensive studies on molecules that could fail on clinical phases we selected the model that minimised type-II errors (non-rejection of false).
 
 #### room for improvement
-With more time we could perform a grid search for each model to find the best hyperparameters.
+With more time we could perform a grid search for each model to find the best hyperparameters and run a Principal Component Analysis or a Recursive Feature Elimination algorithm to reduce the number of features and minimise the noise.
 
 ##### predict
 When running the application using the setup.py file; please speicify the smile you want to analyze.
