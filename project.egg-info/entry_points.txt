@@ -1,3 +1,5 @@
 [console_scripts]
-servier-predict = main.main:main
+predict = bin.predict:main
+servier-predict = bin.main:main
+train-evaluate = bin.train_evaluate:main
 

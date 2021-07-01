@@ -3,8 +3,8 @@ from setuptools import setup, find_packages
 setup(
     name='project',
     version='1.1',
-    #packages=find_packages(),
-    packages=['main', 'feature_extractor'],
+    packages=find_packages(),
+    #packages=['bin', 'lib'],
     url='',
     license='',
     author='Chems',
@@ -12,8 +12,10 @@ setup(
     description='Servier',
     entry_points={
         'console_scripts': [
-            'servier-predict = main.main:main',
-            'servier-evaluate = main.evaluate:main',
+            'servier-predict = bin.main:main',
+            'train-evaluate = bin.train_evaluate:main',
+            'predict = bin.predict:main'
+
         ],
     },
 )

@@ -1,2 +1,2 @@
-feature_extractor
-main
+bin
+lib

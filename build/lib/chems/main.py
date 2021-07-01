@@ -2,7 +2,7 @@
  #   print("hello world!")
 
 import pandasss as pd
-from feature_extractor import fingerprint_features, fingerprint_array
+from lib import fingerprint_features, fingerprint_array
 from sklearn.model_selection import train_test_split
 from sklearn import svm
 import argparse
@@ -12,7 +12,7 @@ from sklearn.metrics import classification_report
 
 
 def wesh():
-    #from feature_extractor import fingerprint_features, fingerprint_array
+    #from lib import fingerprint_features, fingerprint_array
     df = pd.read_csv('dataset_single.csv')
 
     # DATA PRE PROCESSING
