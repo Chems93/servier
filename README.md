@@ -64,9 +64,8 @@ To be investigated.
 
 ### Docker
 We created the dockerfile that allowed us to build the docker image.
-However, when we tried to run the docker image we faced an package import error.
-The mentioned is well installed.
-To be investigated.
+run 'docker build . -t image-name' to build your docker image.
+run 'docker run image-name your-smile' to run your code via docker.
 
 
 
