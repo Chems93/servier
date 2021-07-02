@@ -11,7 +11,8 @@ RUN mkdir /root/.conda
 RUN bash Miniconda3-latest-Linux-x86_64.sh -b
     #&& export PATH=~/miniconda/bin:$PATH
 RUN conda update -n base conda \
-    && conda install -c conda-forge rdkit
+    && conda install -c conda-forge rdkit \
+    && conda install -c conda-forge --file requirements.txt
 COPY . .
 RUN python setup.py install
-CMD ["python", "main/main.py"]
+CMD ["python", "bin/main.py", "Cc1cccc(N2CCN(C(=O)C34CC5CC(CC(C5)C3)C4)CC2)c1C"]
